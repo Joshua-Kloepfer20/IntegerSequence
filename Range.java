@@ -13,7 +13,7 @@ public class Range implements IntegerSequence {
     return end - start + 1;
   }
   public boolean hasNext() {
-    return current < end;
+    return current <= end;
   }
   public int next() {
     if (hasNext()) {
